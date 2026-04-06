@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOFTCAR - Contato</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">SOFT<span>CAR</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="estoque.html">Estoque</a></li>
+            <li><a href="empresa.html">Empresa</a></li>
+            <li><a href="documentos.html">Documentos</a></li>
+            <li><a href="contato.html" class="active">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main class="container-contato">
+        <section class="contato-flex">
+            
+            <div class="formulario">
+                <h2>Envie uma Mensagem</h2>
+                <form action="#">
+                    <div class="campo">
+                        <label>Nome Completo:</label>
+                        <input type="text" placeholder="Seu nome...">
+                    </div>
+                    <div class="campo">
+                        <label>E-mail:</label>
+                        <input type="email" placeholder="seu@email.com">
+                    </div>
+                    <div class="campo">
+                        <label>Assunto:</label>
+                        <select>
+                            <option>Comprar um veículo</option>
+                            <option>Vender meu carro</option>
+                            <option>Financiamento</option>
+                            <option>Outros</option>
+                        </select>
+                    </div>
+                    <div class="campo">
+                        <label>Mensagem:</label>
+                        <textarea rows="5" placeholder="Como podemos ajudar?"></textarea>
+                    </div>
+                    <button type="submit" class="btn-enviar">Enviar Proposta</button>
+                </form>
+            </div>
+
+            <div class="info-adicional">
+                <h2>Nossas Unidades</h2>
+                
+                <p><strong>Lista Não Ordenada (Padrão):</strong></p>
+                <ul>
+                    <li>Matriz: São Paulo - SP</li>
+                    <li>Filial: Curitiba - PR (Em breve)</li>
+                </ul>
+
+                <p><strong>Lista Ordenada (Type "A" - Letras):</strong></p>
+                <ol type="A">
+                    <li>Segunda a Sexta: 08h às 18h</li>
+                    <li>Sábado: 09h às 13h</li>
+                    <li>Domingo: Fechado</li>
+                </ol>
+
+                <p><strong>Lista Ordenada (Type "I" - Romano):</strong></p>
+                <ol type="I">
+                    <li>Vendas de Novos</li>
+                    <li>Seminovos Premium</li>
+                    <li>Oficina Especializada</li>
+                </ol>
+
+                <p><strong>Lista de Definição (DL):</strong></p>
+                <dl>
+                    <dt>Telefone:</dt>
+                    <dd>(11) 4002-8922</dd>
+                    <dt>E-mail:</dt>
+                    <dd>contato@softcar.com.br</dd>
+                </dl>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 SOFTCAR - Qualidade e Confiança.</p>
+    </footer>
+
+</body>
+</html>
