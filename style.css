@@ -1,0 +1,193 @@
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    background-color: #f4f7f6; /* Cor de fundo Requisito 5 */
+    color: #333;
+}
+
+/* Estilização da Nav Bar */
+.navbar {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #003366;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #ff4500; /* Um detalhe em cor para a marca */
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #003366;
+    border-bottom: 2px solid #003366;
+}
+
+/* Hero Section (Banner) */
+.hero {
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1500&q=80');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background-color: #ff4500;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #e03e00;
+}
+
+/* Patrocinadores (Requisito 11) */
+.patrocinadores {
+    padding: 50px 8%;
+    text-align: center;
+}
+
+.container-ads {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ad-card {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 250px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.ad-card:hover {
+    transform: translateY(-5px);
+    border-color: #003366;
+}
+
+.ad-card p { font-size: 12px; color: #999; margin-bottom: 10px; }
+.ad-card span { font-weight: bold; color: #333; font-size: 18px; }
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+/* Estilização da Página de Estoque */
+.container-estoque {
+    padding: 40px 8%;
+}
+
+.titulo-pagina {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.titulo-pagina h1 {
+    color: #003366;
+    font-size: 2.5rem;
+}
+
+/* Grid de 3 colunas (Requisito 4) */
+.galeria-carros {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Cria as 3 colunas iguais */
+    gap: 25px; /* Espaço entre as fotos */
+}
+
+.carro-item {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.carro-item:hover {
+    transform: scale(1.03);
+}
+
+.carro-item img {
+    width: 100%;
+    height: 250px; /* Altura fixa para garantir que todas tenham o mesmo tamanho */
+    object-fit: cover; /* Faz a foto preencher o espaço sem achatar */
+    display: block;
+}
+
+.info-carro {
+    padding: 15px;
+    text-align: center;
+}
+
+.info-carro h3 {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.info-carro p {
+    color: #777;
+    font-size: 0.9rem;
+}
+
+/* Responsividade: Se a tela for pequena, vira 1 coluna */
+@media (max-width: 768px) {
+    .galeria-carros {
+        grid-template-columns: 1fr;
+    }
+}
