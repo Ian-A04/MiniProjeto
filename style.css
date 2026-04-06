@@ -191,3 +191,167 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+.container-docs { padding: 40px 8%; }
+.secao-doc { margin-bottom: 50px; }
+
+/* Estilo da Tabela */
+.tabela-colorida {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabela-colorida th, .tabela-colorida td {
+    border: 1px solid #333;
+    padding: 12px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Requisito 12: Cores de preenchimento diferentes para cada célula */
+/* Você pode criar classes c-1, c-2, c-3... ou usar nth-child */
+.c-1 { background-color: #ffadad; }
+.c-2 { background-color: #ffd6a5; }
+.c-3 { background-color: #fdffb6; }
+.c-4 { background-color: #caffbf; }
+.c-5 { background-color: #9bf6ff; }
+.c-6 { background-color: #a0c4ff; }
+.c-7 { background-color: #bdb2ff; }
+/* Continue definindo cores únicas para as classes das células */
+
+.wireframe-box img {
+    max-width: 100%;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+.formatos-texto p { margin-bottom: 10px; }
+blockquote {
+    border-left: 5px solid #003366;
+    padding-left: 15px;
+    font-style: italic;
+    background: #e9ecef;
+    padding: 10px;
+}
+
+.container-links { padding: 40px 8%; }
+
+/* Grid para os 10 links externos */
+.grid-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.grid-links a {
+    display: block;
+    padding: 10px;
+    background: #003366;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 4px;
+}
+
+/* Estilo dos 14 textos */
+.menu-interno {
+    background: #eee;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+.bloco-texto {
+    margin-bottom: 100px; /* Espaço para parecer uma página nova ao rolar */
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.voltar {
+    display: inline-block;
+    margin-top: 15px;
+    color: #ff4500;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.container-contato {
+    padding: 50px 8%;
+}
+
+.contato-flex {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.formulario, .info-adicional {
+    flex: 1;
+    min-width: 300px;
+}
+
+.formulario h2, .info-adicional h2 {
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+/* Estilo dos campos do formulário */
+.campo {
+    margin-bottom: 15px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.campo input, .campo select, .campo textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+.btn-enviar {
+    background-color: #003366;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-enviar:hover {
+    background-color: #ff4500;
+}
+
+/* Estilo das Listas (Requisito 7) */
+.info-adicional p {
+    margin-top: 20px;
+    color: #555;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.info-adicional ul, .info-adicional ol {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+dt {
+    font-weight: bold;
+    color: #003366;
+    margin-top: 10px;
+}
+
+dd {
+    margin-left: 0;
+    color: #666;
+}
