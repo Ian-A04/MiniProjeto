@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>SOFTCAR - Detalhes do Veículo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">SOFT<span>CAR</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="estoque.html" class="active">Estoque</a></li>
+            <li><a href="empresa.html">Empresa</a></li>
+            <li><a href="documentos.html">Documentos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main class="container-detalhes">
+        <div class="voltar-link">
+            <a href="estoque.html">← Voltar para o Estoque</a>
+        </div>
+
+        <section class="produto">
+            <div class="imagem-grande">
+                <img src="data:image/jpeg;base64,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" alt="Carro em destaque">
+            </div>
+
+            <div class="especificacoes">
+                <h1>Fiat Toro Volcano 2025</h1>
+                <p class="preco">R$  161.000,00</p>
+                
+                <hr> <h3>Descrição Técnica</h3>
+                <p><strong>Potência:</strong> 185 cv (E) / 180 cv (G) (Turbo)</p> <p><em>Transmissão:</em> Automática de 6 marchas</p> <p><u>Combustível:</u> Flex (H<sub>2</sub>O para limpeza)</p> <div class="destaque-venda">
+                    <p><del>De R$ 186.000,00</del> (Promoção da Semana)</p> </div>
+
+                <blockquote>
+                    "O equilíbrio perfeito entre conforto e performance para a sua família."
+                </blockquote> <a href="contato.html" class="btn-enviar">Tenho Interesse</a>
+            </div>
+            <br>
+            <br>
+        </section>
+    </main>
+       <section class="secao-doc">
+            <h2>Tabela de Especificações Técnicas</h2>
+            <table class="tabela-colorida">
+                <thead>
+                    <tr>
+                        <th>Modelo</th>
+                        <th>Ano</th>
+                        <th>Motor</th>
+                        <th>Combustivel</th>
+                        <th>Preço</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="4" class="c-1">🔥 Promoção da Semana</td>
+                        <td class="c-2">R$ 125.900,00</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4" class="c-3">SUV</td>
+                        <td class="c-4">2024</td>
+                        <td class="c-5">2.0</td>
+                        <td class="c-6">Flex</td>
+                        <td class="c-7">R$ 170.000,00</td>
+                    </tr>
+                    <tr><td class="c-8">2023</td><td class="c-9">1.8</td><td class="c-10">Gasolina</td><td class="c-11">R$ 140.000,00</td></tr>
+                    <tr><td class="c-12">2022</td><td class="c-13">1.6</td><td class="c-14">Flex</td><td class="c-15">R$ 135.000,00</td></tr>
+                    <tr><td class="c-16">2021</td><td class="c-17">2.0 Turbo</td><td class="c-18">Gasolina</td><td class="c-19">R$ 158.000,00</td></tr>
+                    </tbody>
+            </table>
+        </section>
+
+</body>
+</html>
