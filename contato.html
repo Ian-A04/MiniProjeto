@@ -9,20 +9,29 @@
 <body>
 
     <nav class="navbar">
-        <div class="logo">SOFT<span>CAR</span></div>
+    <a href="index.html" class="logo-container">
+    <div class="logo-symbol">
+        <div class="shape-main"></div>
+        <div class="shape-detail"></div>
+    </div>
+    
+    <div class="logo-text">
+        <span class="soft">SOFT</span><span class="car">CAR</span>
+    </div>
+    </a>
         <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="estoque.html">Estoque</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="estoque.html">Catálogo</a></li>
             <li><a href="empresa.html">Empresa</a></li>
             <li><a href="documentos.html">Documentos</a></li>
-            <li><a href="contato.html" class="active">Contato</a></li>
+            <li><a href="contato.html">Contato</a></li>
         </ul>
     </nav>
 
     <main class="container-contato">
         <section class="contato-flex">
             
-            <div class="formulario">
+            <div id="meuFormulario" class="formulario">
                 <h2>Envie uma Mensagem</h2>
                 <form action="#">
                     <div class="campo">
@@ -31,7 +40,10 @@
                     </div>
                     <div class="campo">
                         <label>E-mail:</label>
-                        <input type="email" placeholder="seu@email.com">
+                        <input type="email" required 
+                            oninvalid="this.setCustomValidity('Digite um e-mail válido (@gmail)!!')" 
+                            oninput="this.setCustomValidity('')" placeholder="Exemplo@gmail.com">
+                        
                     </div>
                     <div class="campo">
                         <label>Assunto:</label>
@@ -46,34 +58,49 @@
                         <label>Mensagem:</label>
                         <textarea rows="5" placeholder="Como podemos ajudar?"></textarea>
                     </div>
+                
                     <button type="submit" class="btn-enviar">Enviar Proposta</button>
                 </form>
             </div>
+            <script>
+                // 1. Pegamos o formulário pelo ID
+                const form = document.getElementById('meuFormulario');
+
+                form.addEventListener('submit', function(event) {
+                 // 2. Impede o recarregamento da página
+                 event.preventDefault(); 
+        
+                 // 3. Mostra o aviso na tela
+                 alert('Obrigado! Sua mensagem foi enviada com sucesso para a SOFTCAR.');
+        
+                 // 4. ESSA LINHA LIMPA O FORMULÁRIO:
+                 form.reset(); 
+                  });
+             </script>
 
             <div class="info-adicional">
                 <h2>Nossas Unidades</h2>
                 
-                <p><strong>Lista Não Ordenada (Padrão):</strong></p>
                 <ul>
                     <li>Matriz: São Paulo - SP</li>
                     <li>Filial: Curitiba - PR (Em breve)</li>
                 </ul>
 
-                <p><strong>Lista Ordenada (Type "A" - Letras):</strong></p>
+                <h4>Horário de Funcionamento</h4>
                 <ol type="A">
                     <li>Segunda a Sexta: 08h às 18h</li>
                     <li>Sábado: 09h às 13h</li>
                     <li>Domingo: Fechado</li>
                 </ol>
 
-                <p><strong>Lista Ordenada (Type "I" - Romano):</strong></p>
+                <h4>Nossos Serviços</h4>
                 <ol type="I">
                     <li>Vendas de Novos</li>
                     <li>Seminovos Premium</li>
                     <li>Oficina Especializada</li>
                 </ol>
 
-                <p><strong>Lista de Definição (DL):</strong></p>
+                <h4>Informações</h4>
                 <dl>
                     <dt>Telefone:</dt>
                     <dd>(11) 4002-8922</dd>
