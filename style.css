@@ -732,3 +732,27 @@ dd {
 .logo-container:hover .shape-main {
     background-color: #004a94; /* O azul brilha levemente */
 }
+
+/* Layout da página de detalhes */
+.container-detalhes { padding: 40px 8%; }
+
+.voltar-link { margin-bottom: 20px; }
+.voltar-link a { text-decoration: none; color: #666; font-size: 0.9rem; }
+
+.produto {
+    display: flex;
+    gap: 40px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.imagem-grande { flex: 1.5; }
+.imagem-grande img { width: 100%; border-radius: 8px; }
+
+.especificacoes { flex: 1; }
+.especificacoes h1 { color: #003366; margin-bottom: 10px; }
+.preco { font-size: 2rem; color: #ff4500; font-weight: bold; }
+
+.destaque-venda { margin: 15px 0; color: #999; }
