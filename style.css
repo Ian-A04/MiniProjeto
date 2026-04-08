@@ -240,9 +240,13 @@ blockquote {
 /* Grid para os 10 links externos */
 .grid-links {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    /* Ajustamos o repeat para auto-fit e definimos um max-width para o container */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 200px)); 
     gap: 15px;
-    margin: 20px 0;
+    margin: 20px auto; /* O 'auto' nas laterais centraliza o bloco na tela */
+    justify-content: center; /* Centraliza os itens dentro do grid */
+    max-width: 1200px; /* Limita a largura para os cards não ficarem espalhados demais em monitores ultra-wide */
+    padding: 0 20px;
 }
 
 .grid-links a {
@@ -253,6 +257,14 @@ blockquote {
     text-decoration: none;
     text-align: center;
     border-radius: 4px;
+    transition: 0.3s;
+}
+
+/* Centralizando o título "Montadoras" também */
+h2 {
+    text-align: center;
+    margin-top: 40px;
+    color: #333;
 }
 
 /* Estilo dos 14 textos */
