@@ -339,8 +339,18 @@ h2 {
 
 .contato-flex {
     display: flex;
-    gap: 50px;
-    flex-wrap: wrap;
+    justify-content: space-between; /* Garante que um fique em cada ponta */
+    align-items: flex-start;
+    gap: 40px; /* Define um espaço fixo entre eles */
+    flex-wrap: wrap; /* Se não couber, ele desce de forma organizada em celulares */
+    max-width: 1200px; /* Limita o tamanho máximo */
+    margin: 0 auto; /* Centraliza o bloco todo na tela */
+}
+
+/* Garante que os blocos internos tenham um tamanho base */
+.formulario, .info-adicional {
+    flex: 1; /* Faz os dois dividirem o espaço igualmente */
+    min-width: 320px; /* Impede que fiquem espremidos demais */
 }
 
 .formulario, .info-adicional {
