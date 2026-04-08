@@ -24,17 +24,6 @@ body {
     z-index: 1000;
 }
 
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #003366;
-    letter-spacing: 1px;
-}
-
-.logo span {
-    color: #ff4500; /* Um detalhe em cor para a marca */
-}
-
 .nav-links {
     display: flex;
     list-style: none;
@@ -664,4 +653,72 @@ dd {
     padding: 40px;
     text-align: center;
     border-radius: 4px;
+}
+
+/* Container que junta Ícone + Texto */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* --- O ÍCONE --- */
+.logo-symbol {
+    position: relative;
+    width: 40px;
+    height: 30px;
+}
+
+/* Forma principal (Azul Marinho) - Lembra a aerodinâmica de um carro */
+.shape-main {
+    width: 30px;
+    height: 20px;
+    background-color: #003366;
+    border-radius: 4px 15px 4px 4px; /* Curva que sugere velocidade */
+    transform: skewX(-15deg); /* Inclinação para dar ideia de movimento */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* Detalhe Circular (Laranja) - Representa o farol ou a perfeição (Soft) */
+.shape-detail {
+    width: 12px;
+    height: 12px;
+    background-color: #ff4500;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 5px;
+    box-shadow: 0 0 10px rgba(255, 69, 0, 0.5);
+    transition: 0.4s ease;
+}
+
+/* --- O TEXTO --- */
+.logo-text {
+    font-family: 'Segoe UI', Roboto, bold, sans-serif;
+    font-size: 26px;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.logo-text .soft {
+    color: #003366;
+    font-weight: 300; /* Mais fino para ser 'Soft' */
+}
+
+.logo-text .car {
+    color: #ff4500;
+    font-weight: 900; /* Mais grosso para ser forte */
+}
+
+/* --- EFEITO AO PASSAR O MOUSE (Interatividade) --- */
+.logo-container:hover .shape-detail {
+    transform: scale(1.3) translateX(5px); /* O detalhe laranja 'acelera' */
+}
+
+.logo-container:hover .shape-main {
+    background-color: #004a94; /* O azul brilha levemente */
 }
