@@ -30,68 +30,154 @@
 
     <main class="container-docs">
         
-   <section class="secao-doc">
-    <h2>Wireframe do Projeto</h2>
-
-    <!-- HOME -->
-    <div class="wireframe-box">
-        <h3>Home</h3>
-        <div class="wf-navbar">Navbar</div>
-        <div class="wf-hero">Banner / Hero</div>
-        <div class="wf-section">Seção Parceiros (4 cards)</div>
-        <div class="wf-footer">Footer</div>
+    <section class="secao-doc">
+    <div class="wf-header-main">
+        <h2>Wireframe do Projeto</h2>
+        <p>Planejamento visual e arquitetura das principais páginas do sistema SOFTCAR.</p>
     </div>
 
-    <!-- CATÁLOGO -->
-    <div class="wireframe-box">
-        <h3>Catálogo</h3>
-        <div class="wf-navbar">Navbar</div>
-        <div class="wf-title">Título da Página</div>
-        <div class="wf-grid">
-            <div>Carro 1</div>
-            <div>Carro 2</div>
-            <div>Carro 3</div>
-            <div>Carro 4</div>
-            <div>Carro 5</div>
-            <div>Carro 6</div>
-        </div>
-        <div class="wf-footer">Footer</div>
-    </div>
+    <div class="wf-grid-container">
+        <!-- HOME -->
+        <div class="wf-card">
+            <div class="wf-card-header">
+                <span class="wf-badge">Página 01</span>
+                <h3>Home</h3>
+            </div>
+            <div class="wf-preview">
+                <div class="wf-element nav">Navbar</div>
+                <div class="wf-element hero">
+                    <div class="wf-dot"></div>
+                    <span>Hero / Banner</span>
+                </div>
+                <div class="wf-row">
+                    <div class="wf-element card-sm" style="width: 325px;">Parceiros</div>
+                    </div><br>
+                    <div class="wf-row" style="margin-top: -23px;"></div>
+                 <div class="wf-element card-sm">Montadoras</div>
+                
+            
 
-    <!-- EMPRESA -->
-    <div class="wireframe-box">
-        <h3>Empresa</h3>
-        <div class="wf-navbar">Navbar</div>
-        <div class="wf-title">Título (Briefing)</div>
 
-        <div class="wf-list">
-            <div>01 - Ramo de atuação</div>
-            <div>02 - Filiais</div>
-            <div>03 - Produtos</div>
-            <div>04 - Endereço</div>
-            <div>05 - Concorrência</div>
+                <div class="wf-element footer">Footer</div>
+            </div>
+            
+            <!-- <div class="wf-details"> 
+                <ul>
+                    <li>Navegação principal fixa</li>
+                    <li>Banner de impacto com CTA</li>
+                    <li>Grade de parceiros estratégicos</li>
+                </ul>
+            </div> -->
         </div>
 
-        <div class="wf-footer">Footer</div>
-    </div>
-
-    <!-- CONTATO -->
-    <div class="wireframe-box">
-        <h3>Contato</h3>
-        <div class="wf-navbar">Navbar</div>
-
-        <div class="wf-flex">
-            <div class="wf-form">Formulário</div>
-            <div class="wf-info">Informações / Listas</div>
+        <!-- CATÁLOGO -->
+        <div class="wf-card">
+            <div class="wf-card-header">
+                <span class="wf-badge">Página 02</span>
+                <h3>Catálogo</h3>
+            </div>
+            <div class="wf-preview">
+                <div class="wf-element nav">Navbar</div>
+                <div class="wf-element title-bar">Estoque de Veículos</div>
+              
+                <div class="wf-grid-3">
+                    <div class="wf-element item">Car</div>
+                    <div class="wf-element item">Car</div>
+                    <div class="wf-element item">Car</div>
+                    <div class="wf-element item">Car</div>
+                    <div class="wf-element item">Car</div>
+                    <div class="wf-element item">Car</div>
+                    <div class="wf-element item">Car</div>
+                    <div class="wf-element item">Car</div>
+                    <div class="wf-element item">Car</div>
+                </div><div class="wf-row" style="margin-top: -13px;"></div>
+             
+                <div class="wf-element footer">Footer</div>
+                
+            </div>
+            <!-- <div class="wf-details">
+                <ul>
+                    <li>Grade responsiva de 3 colunas</li>
+                    <li>Cards com imagem e informações</li>
+                    <li>Filtros de busca integrados</li>
+                </ul>
+            </div> -->
         </div>
 
-        <div class="wf-footer">Footer</div>
-    </div>
+          <!-- DETALHES DO CARRO -->
+        <div class="wf-card">
+            <div class="wf-card-header">
+                <h3>Detalhes do Carro</h3>
+            </div>
+            <div class="wf-preview">
+                <div class="wf-element nav">Navbar</div>
+                <div class="wf-split-detail">
+                    <div class="wf-element img-placeholder" style="height: 50px;">Foto do Carro</div> <p style="margin-bottom: 2px;"></p>
+                    <div class="wf-info-stack">
+                        <div class="wf-element line-title" style="height: 25px;">Título / Preço</div> <p style="margin-bottom: 2px;"></p>
+                        <div class="wf-element line-desc" style="height: 25px;" >Desc. Técnica</div> <p style="margin-bottom: 2px;"></p>
+                        <div class="wf-element btn-cta" style="height: 25px" >Botão Interesse</div> <p style="margin-bottom: 2px;"></p>
+                    </div><p style="margin-bottom: 1px;"></p>
+                </div>
+                <div class="wf-element table-spec" style="height: 40px;">Tabela de Especificações</div> 
+                <p style="margin-bottom: 1px;"></p>
+                <div class="wf-element footer">Footer</div>
+            </div>
+        </div>
 
+        <!-- EMPRESA -->
+        <div class="wf-card">
+            <div class="wf-card-header">
+                <span class="wf-badge">Página 03</span>
+                <h3>Empresa</h3>
+            </div>
+            <div class="wf-preview">
+                <div class="wf-element nav">Navbar</div>
+                <div class="wf-element title-bar">Briefing Institucional</div>
+                <div class="wf-list-stack">
+                    <div class="wf-element list-item">01. Atuação</div>
+                    <div class="wf-element list-item">02. Filiais</div>
+                    <div class="wf-element list-item">03. Produtos</div>
+                    <div class="wf-element list-item">04. Endereço</div>
+                </div><p style="margin-bottom: 0px;"></p>
+                <div class="wf-element footer">Footer</div>
+            </div>
+            <!-- <div class="wf-details">
+                <ul>
+                    <li>Layout focado em leitura</li>
+                    <li>Ícones numerados para etapas</li>
+                    <li>Design limpo e corporativo</li>
+                </ul>
+            </div> -->
+        </div>
+
+        <!-- CONTATO -->
+        <div class="wf-card">
+            <div class="wf-card-header">
+                <span class="wf-badge">Página 04</span>
+                <h3>Contato</h3>
+            </div>
+            <div class="wf-preview">
+                <div class="wf-element nav">Navbar</div>
+                <div class="wf-split">
+                    <div class="wf-element form-box">Formulário</div>
+                    <div class="wf-element info-box">Info / Mapa</div>
+                </div>
+                <div class="wf-element footer">Footer</div>
+            </div>
+            <!-- <div class="wf-details">
+                <ul>
+                    <li>Divisão em duas colunas</li>
+                    <li>Campos de entrada validados</li>
+                    <li>Informações de contato rápidas</li>
+                </ul>
+            </div> -->
+        </div>
+    </div>
 </section>
 
   
-</section>
+
 
         <hr>
 
