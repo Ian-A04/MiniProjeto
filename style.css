@@ -862,7 +862,13 @@ dd {
 .wf-list-stack { display: flex; flex-direction: column; gap: 5px; flex-grow: 1; }
 .wf-element.list-item { height: 30px; justify-content: flex-start; padding-left: 10px; }
 
-.wf-split { display: grid; grid-template-columns: 1.5fr 1fr; gap: 5px; flex-grow: 1; }
+.wf-spt { display: grid; grid-template-columns: 1.5fr 1fr; gap: 5px; flex-grow: 1; }
+.wf-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px;
+  width: 100%;
+}
 .wf-element.form-box, .wf-element.info-box { height: 120px; }
 
 .wf-details {
